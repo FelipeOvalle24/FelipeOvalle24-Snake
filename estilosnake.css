@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Alkatra & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Macondo & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 83%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #06002e;
+}
+
+.wrapper{
+    border-radius: 10px;
+    border: solid 2px rgb(0, 0, 0);
+    width: 65vmin;
+    height: 70vmin;
+    background: #293447;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.game-detail{
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board{
+    width: 100%;
+    height: 100%;
+    background: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    background: #ff1515;
+    border-radius: 20px;
+}
+
+.play-board .head {
+    background: #3aff29;
+    
+}
+
+#awds {
+    width: 150;
+    height: 160;
+    margin-left: 30;
+    margin-top: -60;
+}
+
+.controles img {
+    width: 200;
+    height: 215;
+}
+
+.controles {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 140;
+    right: 90;
+}
+
+.controles {
+    width: 200;
+    height: 70vmin;
+    background: #212837;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 101;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
+.enunciado-controles{
+    background: #293447;
+    height: 50;
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.snake-portada img{
+    width: 400;
+    height: 400;
+}
+
+.snake-portada {
+    position: fixed;
+    top: 280;
+    right: 700;
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+.pregunta-snake img {
+    height: 220;
+    width: 400;
+}
+
+.pregunta-snake {
+    position: fixed;
+    top: 110;
+    right: 850;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+#c-pause {
+    width: 90;
+    height: 80;
+    margin-left: 100;
+    margin-top: -13;
+}
+
+#letra-pause {
+    width: 50;
+    height: 50;
+    position: fixed;
+    top: 468;
+    right: 185;
+}
+
+.fin {
+    background: #676e7c;
+    width: 280;
+    height: 110;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 260%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20;
+    border: solid black 3px;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.fin button {
+    background: #3aff29;
+    width: 190;
+    height: 35;
+    border-radius: 10px;
+    border: solid #F0A500 2px;
+}
+
+#reintentar:hover {
+    background: red;
+    border: solid 2px black;
+    border-radius:80px 20px;
+    filter: drop-shadow(0px 0px 15px rgb(255, 0, 0));
+}
+
+.cambio-fondo {
+    background-image: url(./imgsnake/interrogante1.jpg);
+  }
+
+.cambio-fondo-dia-noche {
+    background-image: url(./imgsnake/nubes3.jpg);
+    background-size: contain;
+}
+
+#pregunta-uno * { 
+    background: rgb(15, 15, 15);
+    color: white;
+    margin: 0;
+    padding: 19;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+    font-size: 280%;
+    border-radius: 10% / 50%;
+    border: solid rgb(38, 248, 255) 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 15px rgb(56, 207, 245));
+}
+
+#pregunta-dos * {
+    background: rgb(15, 15, 15);
+    color: white;
+    margin: 0;
+    padding: 19;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+    font-size: 280%;
+    border-radius: 10% / 50%;
+    border: solid rgb(38, 248, 255) 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 15px rgb(56, 207, 245));
+}
+
+#pregunta-tres * {
+    background: rgb(15, 15, 15);
+    color: white;
+    margin: 0;
+    padding: 19;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+    font-size: 280%;
+    border-radius: 10% / 50%;
+    border: solid rgb(38, 248, 255) 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 15px rgb(56, 207, 245));
+}
+
+#pregunta-cuatro * {
+    background: rgb(15, 15, 15);
+    color: white;
+    margin: 0;
+    padding: 19;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+    font-size: 280%;
+    border-radius: 10% / 50%;
+    border: solid rgb(38, 248, 255) 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 15px rgb(56, 207, 245));
+}
+
+#pregunta-cinco * {
+    background: rgb(15, 15, 15);
+    color: white;
+    margin: 0;
+    padding: 19;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+    font-size: 280%;
+    border-radius: 10% / 50%;
+    border: solid rgb(38, 248, 255) 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 15px rgb(56, 207, 245));
+}
+
+#pregunta-seis * {
+    background: rgb(15, 15, 15);
+    color: white;
+    margin: 0;
+    padding: 19;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+    font-size: 280%;
+    border-radius: 10% / 50%;
+    border: solid rgb(38, 248, 255) 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 15px rgb(56, 207, 245));
+}
+ 
+#pause {
+    display: none;
+}
+
+#numero-tres {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-bottom: 100px;
+    display: none; 
+}
+#numero-tres.show {
+    display: block;
+  }
+
+#numero-dos {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-bottom: 100px;
+    display: none; 
+}
+#numero-dos.show {
+    display: block;
+  }
+
+#numero-uno {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-bottom: 100px;
+    display: none; 
+}
+#numero-uno.show {
+    display: block;
+}
+
+.contenedorT {
+    margin: auto;
+    display: table;
+    position: fixed;
+    top: 35;
+    
+}
+
+.contenedorT h1 {
+    float: left;
+    color: rgb(0, 255, 0);
+    position: relative;
+    right: 25;
+    font-size: 370%;
+    -webkit-text-stroke: 1px black;
+}
+
+h1 span {
+    position: absolute;
+    top: -4;
+    right: 0;
+    width: 0;
+    height: 30;
+    background: #06002e;
+    border-left: 2px solid #000;
+
+    animation: maquina 5s infinite alternate steps(18);
+}
+
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.snakecontroles img{
+    position: fixed;
+    top: 280;
+    right: -140;
+    transform: rotate(44deg) scale(0.5);
+}
+.snakecontroles1 img{
+    position: fixed;
+    top: 60;
+    right: -122;
+    transform: rotate(224deg) scale(0.5);
+}
+
+.switch {
+    position: absolute;
+    top: 5;
+    left: 4;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    filter: drop-shadow(0px 0px 10px rgb(34, 13, 153));
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./imgsnake/noche1.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(156, 156, 156);
+    transition: .7s;
+    border-radius: 34px;
+    border: solid 2px black;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    object-fit: scale-down;
+    transition: .7s;
+    border-radius: 50%;
+    top: 2;
+  }
+  
+  input:checked + .slider {
+    background-image: url(./imgsnake/dia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(22, 187, 216);
+    border: solid 2px black;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(47px);
+  }
+
+
+
+
+
+  

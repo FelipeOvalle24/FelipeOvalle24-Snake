@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SNAKE</title>
+        <link rel="stylesheet" href="./estilosnake.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+
+        <audio id="miAudio" src="./musicsnake/beep-08b.mp3"></audio>
+        <audio id="gameover" src="./musicsnake/gameover.m4a"></audio>
+        <audio id="acierto" src="./musicsnake/acierto.mp3"></audio>
+        
+    <section id="juego">
+
+        <label class="switch">
+            <input type="checkbox" id="noche-dia">
+            <span class="slider"></span>
+        </label>
+
+        <div class="contenedorT">
+            <h1>Interactive Snake.<span id="titulo-nuevo">&#160;</span></h1>
+        </div>
+
+        <div class="wrapper">    
+
+            <div class="game-detail">
+                <div class="score">Score: 0</div>
+                <div class="high-score">High Score: 30</div>
+            </div>
+
+            <div class="play-board"></div> 
+            
+        </div>
+    
+        <div class="controles">
+            <div class="enunciado-controles">CONTROLES</div>
+            <img src="./imgsnake/abcd-removebg-preview.png">
+            <img id="awds" src="./imgsnake/wasd1-removebg-preview.png">
+            <img id="c-pause" src="./imgsnake/pause.png">                
+            <img id="letra-pause" src="./imgsnake/letraP.png">
+        </div> 
+
+        <div class="snakecontroles">
+            <img src="./imgsnake/snakecontroles.png">
+        </div>
+        <div class="snakecontroles1">
+            <img src="./imgsnake/snakecontroles.png">
+        </div>
+
+        <div class="snake-portada">
+            <img src="./imgsnake/snake1.png">
+        </div>
+
+        <div class="pregunta-snake">
+            <img src="./imgsnake/pregunta1.png">  
+        </div>
+        
+        <section id="reiniciar">
+            <div class="fin">
+                <h1>¡Game Over!<br><br> <button id="reintentar">REINTENTAR</button></h1>
+            </div>
+        </section>
+        <button id="pause">Pausa</button>
+        
+    </section>
+
+    <img id="numero-tres" src="./imgsnake/numero3.png">
+    <img id="numero-dos" src="./imgsnake/numero2.png">
+    <img id="numero-uno" src="./imgsnake/numero1.png">
+
+    <section id="pregunta-uno">
+            
+        <h1>¿Cuál es el planeta más cercano al sol?<br><br>
+            A. Marte <input type="radio" name="pregunta1"><br>
+            B. Mercurio <input type="radio" name="pregunta1" id="respuesta-correcta1"><br>
+            C. Venus <input type="radio" name="pregunta1"><br>
+            D. Tierra <input type="radio" name="pregunta1"><br>
+        </h1>
+             
+    </section>
+
+    <section id="pregunta-dos">
+            
+        <h1>¿Cuál es la capital de Colombia?<br><br>
+            A. Bogota <input type="radio" name="pregunta2" id="respuesta-correcta2"><br>
+            B. Cali <input type="radio" name="pregunta2" ><br>
+            C. Medellin <input type="radio" name="pregunta2"><br>
+            D. Cartagena <input type="radio" name="pregunta2"><br>
+        </h1>
+         
+    </section> 
+
+    <section id="pregunta-tres">
+            
+        <h1>¿Cómo se escribe la palabra "perro" en ingles?<br><br>
+            A. Cat <input type="radio" name="pregunta3" ><br>
+            B. Cow <input type="radio" name="pregunta3" ><br>
+            C. Dog <input type="radio" name="pregunta3" id="respuesta-correcta3"><br>
+            D. Horse <input type="radio" name="pregunta3"><br>
+        </h1>
+         
+    </section>
+
+    <section id="pregunta-cuatro">
+            
+        <h1>¿Quién escribió Hamlet?<br><br>
+            A. William Shakespeare <input type="radio" name="pregunta4" id="respuesta-correcta4"><br>
+            B. Miguel de Cervantes <input type="radio" name="pregunta4" ><br>
+            C. Gabriel Garcia Marquez <input type="radio" name="pregunta4" ><br>
+            D. Mary Shelley <input type="radio" name="pregunta4"><br>
+        </h1>
+           
+    </section>
+
+    <section id="pregunta-cinco">
+            
+        <h1>¿En que año comenzó la segunda guerra mundial?<br><br>
+            A. 1939 <input type="radio" name="pregunta5" id="respuesta-correcta5"><br>
+            B. 1829 <input type="radio" name="pregunta5" ><br>
+            C. 1945 <input type="radio" name="pregunta5" ><br>
+            D. 1929 <input type="radio" name="pregunta5"><br>
+        </h1>
+      
+    </section>
+
+    <section id="pregunta-seis">
+            
+        <h1>¿Cuál es la capital de España?<br><br>
+            A. Barcelona <input type="radio" name="pregunta6" ><br>
+            B. Sevilla <input type="radio" name="pregunta6" ><br>
+            C. Valencia <input type="radio" name="pregunta6" ><br>
+            D. Madrid <input type="radio" name="pregunta6" id="respuesta-correcta6"><br>
+        </h1>
+            
+    </section>
+    
+        
+        <script src="./snakejs.js"></script>   
+    </body>
+</html>
